@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechSolutions - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TechSolutions</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="services.html">Services</a></li>
+            </ul>
+            <div id="clock" class="clock"></div>
+            <button id="themeToggle">Switch Theme</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Innovative Tech Solutions</h1>
+                <p>Transforming your business with cutting-edge technology</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="question">What services do you offer?</h3>
+                <p class="answer">We provide web development, mobile apps, cloud solutions, and data analytics services.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="question">How can I contact support?</h3>
+                <p class="answer">You can reach our support team 24/7 through the contact page or by emailing support@techsolutions.com.</p>
+            </div>
+        </section>
+
+        <section class="team-section">
+            <h2>Our Team Members</h2>
+            <ul id="userList"></ul>
+            <button id="loadUsersBtn" class="btn">Load Team Members</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> TechSolutions. All rights reserved.</p>
+        <button id="backToTop" class="back-to-top">↑ Back to Top</button>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
