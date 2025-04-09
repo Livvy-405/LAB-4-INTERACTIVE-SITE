@@ -1,41 +1,48 @@
-# Lab 3 - Multipage Website
+# Lab 4 - Multipage Interactive Website
 
 ## Group Members
 - OLIVIA NGUNI
 - [Partner's Name]
 
-## Project Description
-A responsive multipage website for a tech solutions company featuring:
-1. **Home Page**: Hero banner with background image and flexbox content sections
-2. **Services Page**: CSS Grid layout displaying 4 service cards with images
-3. **Contact Page**: Form with HTML5 validation and interactive elements
+## Features Implemented
 
-## Features
-### Technical Implementation
-- **Flexbox**: Navigation bar and home page content layout
-- **CSS Grid**: Services page card layout
-- **Responsive Images**: Hero background and service icons
-- **Animations**: 
-  - Slide-in and fade-in animations for hero content
-  - Hover effects on navigation, cards, and buttons
-- **Form Validation**: Required fields, email format, minlength
+### Core Requirements
+1. **Theme Toggle**
+   - Toggles between light/dark mode
+   - Persists preference using localStorage
 
-### Design Elements
-- **Color Palette**:
-  - Primary: Indigo (#4F46E5)
-  - Secondary: Emerald (#10B981)
-  - Accent: Amber (#F59E0B)
-  - Dark: Gray-800 (#1F2937)
-  - Light: Gray-100 (#F3F4F6)
-- **Images**:
-  - Hero background (hero-bg.jpg)
-  - Service icons (service1.png - service4.png)
+2. **Enhanced Form Validation**
+   - Prevents empty submissions
+   - Validates email format
+   - Shows custom success message
 
-### Responsive Design
-Media queries for:
-- 1024px: Adjusts flexbox to column layout
-- 768px: Changes navigation layout
-- 480px: Stacks all grid items
+3. **Fetch API Integration**
+   - Loads and displays user data from JSONPlaceholder API
+   - Handles loading states and errors
 
-## Screenshots
-(Include screenshots of desktop and mobile views for each page)
+4. **Interactive FAQ Component**
+   - Click questions to reveal/hide answers
+   - Smooth animations with CSS transitions
+
+### Bonus Features
+1. **Real-time Clock**
+   - Displays current time in header
+   - Updates every second
+
+2. **Back to Top Button**
+   - Appears after scrolling down
+   - Smooth scroll to top
+
+3. **Image Slider (commented out)**
+   - Ready to implement with actual images
+   - Auto-rotates every 5 seconds
+
+## Technical Details
+- **Event Listeners**: Used for click, submit, and scroll events
+- **DOM Manipulation**: Dynamic content updates without page reload
+- **Async/Await**: For clean API request handling
+- **CSS Transitions**: Smooth animations for theme toggle and FAQ
+- **Local Storage**: Remembers user's theme preference
+
+
+
