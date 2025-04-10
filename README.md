@@ -33,9 +33,9 @@
    - Appears after scrolling down
    - Smooth scroll to top
 
-3. **Image Slider (commented out)**
+3. **Image Slider**
    - Ready to implement with actual images
-   - Auto-rotates every 5 seconds
+   - Auto-rotates every 3 seconds
 
 ## Technical Details
 - **Event Listeners**: Used for click, submit, and scroll events
