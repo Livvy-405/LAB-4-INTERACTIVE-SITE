@@ -2,7 +2,7 @@
 
 ## Group Members
 - OLIVIA NGUNI - 2021460380
-- [Partner's Name]
+- suwilanji chellah - 2021531309
 
 ## Features Implemented
 
