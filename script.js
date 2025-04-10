@@ -110,21 +110,24 @@ updateClock(); // Initial call
 // Set current year in footer
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Image Slider (Bonus)
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slider img');
-const totalSlides = slides.length;
+// Hero Slider Functionality
+let currentHeroSlide = 0;
+const heroSlides = document.querySelectorAll('.hero-slider .slide');
+const totalHeroSlides = heroSlides.length;
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.display = i === index ? 'block' : 'none';
-    });
+function showHeroSlide(index) {
+  heroSlides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
 }
 
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    showSlide(currentSlide);
+function nextHeroSlide() {
+  currentHeroSlide = (currentHeroSlide + 1) % totalHeroSlides;
+  showHeroSlide(currentHeroSlide);
 }
 
-// Uncomment to enable auto-sliding
-// setInterval(nextSlide, 5000);
+// Auto-slide every 3 seconds
+setInterval(nextHeroSlide, 3000);
+
+// Initialize first slide
+showHeroSlide(0);
